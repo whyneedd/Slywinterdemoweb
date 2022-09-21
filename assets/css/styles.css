@@ -117,6 +117,17 @@ img {
     transition: all .4s;
 }
 
+.nav__link.active {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .75rem;
+    background: rgb(97, 125, 255, .65);
+    transition: all .4s;
+}
+
 .nav__link:hover::before {
     opacity: 1;
 }
@@ -239,10 +250,13 @@ img {
         left: -100%;
         width: 100%;
         height: 100vh;
-        background: red;
+        background: #333;
+        transition: all .4s;
         color: #000;
     }
-
+    .nav__list.active {
+        left: 0;
+    }
     .nav__link {
         margin: 0;
     }
