@@ -5,6 +5,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+::selection {
+    color: rgb(97, 125, 255);
+}
+
 *,
 ::before,
 ::after {
